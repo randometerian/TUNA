@@ -30,10 +30,9 @@ A fully keyboard-driven terminal music player with real-time audio visualizer.
 
 ## Installation
 
-### pip
+### Arch Linux (AUR)
 ```bash
-pip install .
-tuna
+yay -S tuna-music
 ```
 
 ### AppImage
@@ -41,6 +40,12 @@ Download the latest `.AppImage` from [releases](https://github.com/randometerian
 ```bash
 chmod +x TUNA-*.AppImage
 ./TUNA-*.AppImage
+```
+
+### pip
+```bash
+pip install .
+tuna
 ```
 
 ## Usage
