@@ -3,7 +3,7 @@
 A fully keyboard-driven terminal music player with real-time audio visualizer.
 
 ```
- ████████╗██╗   ██╗███╗  ██╗ █████╗ 
+ ████████╗██╗   ██╗███╗  ██╗ █████╗
     ██╔══╝██║   ██║████╗ ██║██╔══██╗
     ██║   ██║   ██║██╔██╗██║███████║
     ██║   ██║   ██║██║╚████║██╔══██║
@@ -36,16 +36,11 @@ pip install .
 tuna
 ```
 
-### Arch Linux (AUR)
-```bash
-yay -S tuna-music
-```
-
 ### AppImage
-Download the latest `.AppImage` from releases and run:
+Download the latest `.AppImage` from [releases](https://github.com/randometerian/TUNA/releases) and run:
 ```bash
-chmod +x tuna-*.AppImage
-./tuna-*.AppImage
+chmod +x TUNA-*.AppImage
+./TUNA-*.AppImage
 ```
 
 ## Usage
