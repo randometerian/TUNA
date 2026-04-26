@@ -1,0 +1,38 @@
+name: Build AppImage
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  appimage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3 mpv portaudio19-dev ffmpeg
+
+      - name: Install Python deps
+        run: |
+          pip install setuptools wheel
+          pip install mutagen Pillow numpy pyaudio
+
+      - name: Build AppImage
+        run: |
+          chmod +x build-appimage.sh
+          ./build-appimage.sh
+
+      - name: Upload AppImage
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ env.UPLOAD_URL }}
+          asset_path: TUNA-*.AppImage
+          asset_name: TUNA-*.AppImage
+          asset_content_type: application/vnd.appimage

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Config (local user data)
+.config/tuna/playlists/*.json
+.config/tuna/cache/
+.config/tuna/config.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# AppImage build artifacts
+*.AppDir/
+*.AppImage
+AppImage/
+
+# Backup
+*.tar.gz
+*.zip
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db

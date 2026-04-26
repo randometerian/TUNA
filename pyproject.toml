@@ -1,0 +1,35 @@
+[project]
+name = "tuna"
+version = "1.1.0"
+description = "Terminal music player with real-time audio visualizer"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [{name = "TUNA Project"}]
+classifiers = [
+    "Environment :: Console :: Curses",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio :: Players",
+]
+keywords = ["music", "player", "terminal", "audio", "visualizer"]
+
+dependencies = [
+    "mutagen>=1.47",
+    "Pillow>=10.0",
+    "pyaudio>=0.2.14",
+    "numpy>=1.26",
+]
+
+[project.scripts]
+tuna = "tuna.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/tuna"
+Repository = "https://github.com/YOUR_USERNAME/tuna"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
