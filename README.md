@@ -13,13 +13,17 @@ A fully keyboard-driven terminal music player with real-time audio visualizer.
 
 ## Screenshots
 <img width="1868" height="1000" alt="image" src="https://github.com/user-attachments/assets/bfd8ecdd-2e36-404f-94d9-d340c606b781" />
-
 --------------------------------------------------------------------------------------------------------------------------------------
-
 <img width="1882" height="996" alt="image" src="https://github.com/user-attachments/assets/b473de9f-877f-4cb1-b89f-a5fda1d226be" />
-
-
-
+--------------------------------------------------------------------------------------------------------------------------------------
+<img width="1872" height="991" alt="image" src="https://github.com/user-attachments/assets/24113caa-af0d-4223-be42-4f6c431c6269" />
+--------------------------------------------------------------------------------------------------------------------------------------
+<img width="1875" height="1007" alt="image" src="https://github.com/user-attachments/assets/74772e35-6f99-44a8-91ea-b27aaad49e89" />
+--------------------------------------------------------------------------------------------------------------------------------------
+<img width="1877" height="1000" alt="image" src="https://github.com/user-attachments/assets/4f175aa5-edeb-4aac-93f4-6748ff0e25d3" />
+--------------------------------------------------------------------------------------------------------------------------------------
+<img width="1845" height="985" alt="image" src="https://github.com/user-attachments/assets/f6a93e4f-b4e3-431d-a146-ac4bb14f1f2e" />
+--------------------------------------------------------------------------------------------------------------------------------------
 ## Features
 
 - 🎵 **Real-time audio visualizer** — FFT-based bars colored by album art palette
