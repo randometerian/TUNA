@@ -13,11 +13,11 @@ A fully keyboard-driven terminal music player with real-time audio visualizer.
 
 ## Features
 
-- **Real-time audio visualizer** — FFT-based bars colored by album art palette
-- **Dynamic color theming** — UI recolors per song using k-means on album art
-- **ASCII album art** — 56×14 character cover art with xterm-256 colors
-- **Full keyboard control** — every action reachable without a mouse
-- **Playlist management** — create, delete, add/remove tracks (JSON storage)
+- 🎵 **Real-time audio visualizer** — FFT-based bars colored by album art palette
+- 🎨 **Dynamic color theming** — UI recolors per song using k-means on album art
+- 🖼️ **ASCII album art** — 56×14 character cover art with xterm-256 colors
+- ⌨️ **Full keyboard control** — every action reachable without a mouse
+- 📋 **Playlist management** — create, delete, add/remove tracks (JSON storage)
 
 ## Requirements
 
@@ -36,7 +36,7 @@ yay -S tuna-music
 ```
 
 ### AppImage
-Download the latest `.AppImage` from [releases](https://github.com/randometerian/TUNA/releases) and run:
+Download from [releases](https://github.com/randometerian/TUNA/releases) and run:
 ```bash
 chmod +x TUNA-*.AppImage
 ./TUNA-*.AppImage
@@ -70,15 +70,17 @@ tuna
 | `PgUp` / `PgDn` | Jump 10 tracks |
 | `Home` / `End` | First / Last track |
 | `/` | Search |
-| `e` | Playlist settings (custom playlists) |
+| `e` | Playlist settings |
 | `?` | Help |
 | `q` | Quit |
 
 ## Configuration
 
-- Playlists: `~/.config/tuna/playlists/`
-- Cover cache: `~/.config/tuna/cache/`
-- Config: `~/.config/tuna/config.json`
+| Path | Purpose |
+|------|---------|
+| `~/.config/tuna/playlists/` | Playlist files |
+| `~/.config/tuna/cache/` | Album art cache |
+| `~/.config/tuna/config.json` | User settings |
 
 ## License
 

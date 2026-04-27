@@ -1,10 +1,10 @@
-# Maintainer: TUNA Project
-pkgname=tuna
+# Maintainer: Randometerian <Randometerian@gmail.com>
+pkgname=tuna-music
 pkgver=1.1.0
 pkgrel=1
 pkgdesc="TUNA — Terminal music player with real-time audio visualizer"
-arch=('x86_64' 'aarch64')
-url="https://github.com/YOUR_USERNAME/tuna"
+arch=('x86_64')
+url="https://github.com/randometerian/TUNA"
 license=('MIT')
 depends=(
     'python>=3.11'
@@ -17,16 +17,14 @@ depends=(
 )
 makedepends=(
     'python-setuptools'
-    'python-pip'
     'python-wheel'
 )
-source=("$pkgname-$pkgver.tar.gz::https://github.com/YOUR_USERNAME/$pkgname/archive/v$pkgver.tar.gz")
+source=("$pkgname-$pkgver.tar.gz::https://github.com/randometerian/$pkgname/archive/v$pkgver.tar.gz")
 sha256sums=('SKIP')
 
 build() {
     cd "$pkgname-$pkgver"
-    pip install --prefix "$srcdir/.deps" -e .
-    rm -rf "$srcdir/.deps"
+    pip install --prefix="$srcdir/.deps" -e .
 }
 
 package() {

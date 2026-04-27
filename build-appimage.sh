@@ -18,6 +18,10 @@ mkdir -p "$APP.AppDir/usr/lib"
 mkdir -p "$APP.AppDir/usr/share/applications"
 mkdir -p "$APP.AppDir/usr/share/icons/hicolor/256x256/apps"
 
+# Copy icon
+cp tuna.png "$APP.AppDir/" 2>/dev/null || true
+cp tuna.png "$APP.AppDir/usr/share/icons/hicolor/256x256/apps/" 2>/dev/null || true
+
 # Create desktop file
 cat > "$APP.AppDir/tuna.desktop" <<'EOF'
 [Desktop Entry]
